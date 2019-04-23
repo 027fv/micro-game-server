@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sy.repository.mapper.StatisticsMapper">
+
+	<select id="getStatistics" resultType="java.util.Map">
+		SELECT 
+			`consume` gems,
+			`gameType` gameType, 
+			DATE_FORMAT(`time`,'%Y-%m-%d') AS time
+		FROM 
+			`t_statistics` 
+		WHERE
+			`gameType` = #{gameType}
+	</select>
+
+	<insert id="setStatistics">
+		INSERT INTO `t_statistics`
+				(`consume`,
+				`gameType`,
+				`time`)  
+			VALUES 
+				(#{consume},
+				 #{gameType},
+				 DATE_FORMAT(NOW(),'%Y-%m-%d')
+				 ) 
+			ON DUPLICATE KEY UPDATE 
+				`consume` = `consume` + ${consume}
+	</insert>
+</mapper>

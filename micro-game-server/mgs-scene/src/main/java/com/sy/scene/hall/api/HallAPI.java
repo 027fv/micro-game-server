@@ -1,0 +1,83 @@
+package com.sy.scene.hall.api;
+
+/**
+ * 大厅与房间API 201-400
+ * 
+ * @author fv
+ */
+public interface HallAPI {
+
+	// 创建房间请求
+	int CREATE_ROOM_REQUEST = 201;
+	int CREATE_ROOM_RESPONSE = 202;
+
+	// 进入房间请求
+	int GET_INTO_ROOM_REQUEST = 203;
+	int GET_INTO_ROOM_RESPONSE = 204;
+
+	// 退出房间请求
+	int EXIT_ROOM_REQUEST = 205;
+	int EXIT_ROOM_RESPONSE = 206;
+	// 解散房间请求
+	int DISSOLVE_ROOM_REQUEST = 207;
+	int DISSOLVE_ROOM_RESPONSE = 208;
+	// 入座
+	int GET_INTO_SEAT_REQUEST = 209;
+	int GET_INTO_SEAT_RESPONSE = 210;
+	// 玩家的房间信息
+	int GET_MY_ROOM_INFO_REQUEST = 211;
+	int GET_MY_ROOM_INFO_RESPONSE = 212;
+
+	// 用户GPS信息
+	int SET_GPS_INFO_REQUEST = 213;
+
+	// 用户战绩信息
+	int GET_RELEVANT_REQUEST = 214;
+	int GET_RELEVANT_RESPONSE = 215;
+
+	// 房间历史信息
+	int GET_HISTORY_REQUEST = 216;
+	int GET_HISTORY_RESPONSE = 217;
+
+	// 游戏回放信息
+	int GET_RECORD_REQUEST = 218;
+	int GET_RECORD_RESPONSE = 219;
+
+	// 茶楼战绩信息
+	int GET_RELEVANT_MANAGER_REQUEST = 220;
+
+	// 心情 聊天
+	int GET_FEEL_REQUEST = 221;
+	int GET_FEEL_RESPONSE = 222;
+
+	// 表情
+	int GET_EMOJI_REQUEST = 223;
+	int GET_EMOJI_RESPONSE = 224;
+
+	// 语音
+	int GET_VOICE_REQUEST = 225;
+	int GET_VOICE_RESPONSE = 226;
+
+	// 离座
+	int ASIDE_REQUEST = 227;
+	int ASIDE_RESPONSE = 228;
+
+	// 钓鱼
+	int FISHING_REQUEST = 229;
+	int FISHING_RESPONSE = 230;
+
+	// 手机绑定
+	int SET_IDENTIFY_CODE_REQUEST = 231;
+	int GET_PHONE_REQUEST = 232;
+	int GET_PHONE_RESPONSE = 235;
+
+	// 实名
+	int SET_REALNAME_REQUEST = 233;
+	int SET_REALNAME_RESPONSE = 234;
+//
+
+	int SUBMIT_INFO_REQUEST = 236;
+	int GET_INFO_REQUEST = 237;
+	int GET_INFO_RESPONSE = 238;
+
+}

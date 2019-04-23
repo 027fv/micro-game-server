@@ -1,0 +1,84 @@
+package com.sy.scene.club.api;
+
+/**
+ * 茶楼API 401 - 600
+ * 
+ * @author yy
+ */
+public interface ClubAPI {
+	// 创建茶楼请求
+	int CREATE_HOUSE_REQUEST = 401;
+
+	int CREATE_HOUSE_RESPONSE = 402;
+	// 加入茶楼请求
+	int GET_INTO_HOUSE_REQUEST = 403;
+
+	int GET_INTO_HOUSE_RESPONSE = 404;
+	// 加入茶楼房间请求
+	int GET_INTO_HOUSE_ROOM_REQUEST = 405;
+
+	int GET_INTO_HOUSE_ROOM_RESPONSE = 406;
+	// 茶楼成员请求
+	int HOUSE_MEMBER_REQUEST = 407;
+
+	int HOUSE_MEMBER_RESPONSE = 408;
+	// 茶楼待审核用户
+	int HOUSE_APPROVE_RESPONSE = 409;
+	// 茶楼管理员
+	int HOUSE_MANAGER_RESPONSE = 410;
+	// 获取茶楼房间信息请求
+	int GET_TABLE_INFO_REQUEST = 411;
+
+	int GET_TABLE_INFO_RESPONSE = 412;
+	// 获取茶楼茶桌人数消息
+	int GET_HOUSE_ROOM_NUM_RESPONSE = 413;
+	// 获取我的茶楼请求
+	int GET_MY_HOUSE_INFO_REQUEST = 414;
+
+	int GET_MY_HOUSE_INFO_RESPONSE = 415;
+	// 离开茶楼
+	int LEAVE_HOUSE_REQUEST = 416;
+	// 退出茶楼
+	int EXIT_HOUSE_REQUEST = 417;
+	int EXIT_HOUSE_RESPONSE = 418;
+	// 解散茶楼
+	int DISSOLVE_HOUSE_REQUEST = 419;
+
+	int DISSOLVE_HOUSE_RESPONSE = 420;
+	// 茶楼设置
+	int SET_UP_HOUSE_REQUEST = 421;
+
+	int SET_UP_HOUSE_RESPONSE = 422;
+	// 大赢家
+	int GET_BIG_WIN_REQUEST = 423;
+
+	int GET_BIG_WIN_RESPONSE = 424;
+	// 茶楼审核通过请求
+	int ADD_APPROVE_REQUEST = 425;
+
+	int ADD_APPROVE_RESPONSE = 426;
+	// 茶楼审核拒绝请求
+	int REFUSE_APPROVE_REQUEST = 427;
+
+	int REFUSE_APPROVE_RESPONSE = 428;
+	// 茶楼添加管理员请求
+	int ADD_MANAGER_REQUEST = 429;
+
+	int ADD_MANAGER_RESPONSE = 430;
+	// 茶楼解除管理员请求
+	int RELIEVE_MANAGER_REQUEST = 431;
+
+	int RELIEVE_MANAGER_RESPONSE = 432;
+	// 茶楼删除玩家请求
+	int DEL_HOUSE_USER_REQUEST = 433;
+
+	int DEL_HOUSE_USER_RESPONSE = 434;
+	// 茶楼管理员解散房间
+	int DISSOLVE_HOUSE_ROOM_REQUEST = 435;
+
+	//int DISSOLVE_HOUSE_ROOM_RESPONSE = 436;
+
+	//修改茶楼玩法请求
+		int SET_CONFIG_REQUEST = 436;
+		//int SET_CONFIG_RESPONSE = 437;
+}
